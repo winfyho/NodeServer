@@ -1,0 +1,39 @@
+.sign-wraper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7)
+}
+.sign{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-60%) ;
+    background: #fff;
+    width: 350px;
+    height: 350px;
+    padding: 30px;
+    border: 1px solid #aaa;
+    border-radius: 16px;
+}
+.sign section{
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+.sign section label{
+    min-width: 50px;
+    line-height: 46px;
+    display: block;
+}
+.sign section input{
+    text-indent: 1em;
+    font-size: 16px;
+    flex: 1 1 auto;
+    height: 46px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
