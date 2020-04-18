@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
     <link rel="stylesheet" href="./static/css/common/base.css">
+    <link rel="stylesheet" href="./static/css/common/style.css">
     <link rel="stylesheet" href="./components/common/sign/sign.css">
-    <!-- <script src="./static/js/vue.js"></script> -->
+    <link rel="stylesheet" href="./components/content/userList/UserList.css">
+    <link rel="stylesheet" href="./components/common/navigator/Navigator.css">
+    <script src="./static/js/vue.js"></script>
 </head>
+
 <body>
     <div id="app">
-        <Sign />
+        <navigator-head></navigator-head>
+
+        <div class="view">
+            <user-list></user-list>
+
+            <!-- <Sign /> -->
+        </div>
+
     </div>
 </body>
 <script type="module">
     // import Vue from "./static/js/vue.js"
-    import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js';
+    // import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js';
     import Sign from "./components/common/sign/sign.js";
+    import NavigatorHead from "./components/common/navigator/Navigator.js";
+    import UserList from "./components/content/userList/UserList.js";
     const vm = new Vue({
-        el:'#app',
-        components:{
-            Sign
+        el: '#app',
+        components: {
+            NavigatorHead,
+            Sign,
+            UserList
         }
     })
-    console.log(vm,Sign)
-    
+    console.log(vm, Sign, UserList)
+
 </script>
+
 </html>

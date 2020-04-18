@@ -1,0 +1,34 @@
+.user-list{
+    border: 1px solid #aaa;
+    max-width: 800px;
+}
+.user-list ul li.title{
+    background: #eee;
+}
+.user-list ul li{
+    padding: 0 20px;
+    display: flex;
+}
+.user-list ul li span{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.user-list ul li span.username{
+    flex: 0 0 250px;
+    overflow: hidden;
+}
+.user-list ul li span.password{
+    flex: 0 0 200px;
+    overflow: hidden;
+}
+.user-list ul li span.openid{
+    flex: 0 0 180px;
+    overflow: hidden;
+}
+.user-list ul li span.init_time{
+    flex: 0 0 140px;
+    overflow: hidden;
+}
+
+

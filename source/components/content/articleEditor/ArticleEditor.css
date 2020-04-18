@@ -1,0 +1,51 @@
+.article-editor{
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+}
+.article-editor .wraper h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+.article-editor .wraper section{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-top: 10px;
+}
+.article-editor .wraper section label{
+    width: 80px;
+    height: 100%;
+    line-height: 57px;
+}
+.article-editor .wraper section input{
+    height: 35px;
+    text-indent: 1em;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+.article-editor .wraper section.tags input{
+    width: 70px;
+}
+.article-editor .wraper .tag-list{
+    padding-left: 80px; 
+    margin: 10px 0;
+}
+.article-editor .wraper .tag-list li{
+    background: #ccc;
+}
+.article-editor .wraper section.pre-img input[type="file"] {
+    border: none;
+    text-indent: 0;
+}
+.article-editor .wraper button{
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 25px;
+    border: none;
+    color: #fff;
+    background: var(--color-main);
+}

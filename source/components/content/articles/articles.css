@@ -1,0 +1,10 @@
+.articles{
+    width: 700px;
+    border: 1px solid #aaa;
+}
+.articles ul li{
+    display: flex;
+}
+.articles ul li span {
+    flex: 1 1 auto;
+}

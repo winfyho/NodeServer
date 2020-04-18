@@ -1,0 +1,25 @@
+.navigator{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.navigator .routes {
+    display: flex;
+    height: 100%;
+    
+}
+.navigator .routes a{
+    cursor: pointer;
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+    line-height: 60px;
+    color: #444;
+    font-weight: 600;
+}
+.navigator .routes a:hover{
+    color: var(--color-main);
+}
+.navigator .routes .active{
+    color: var(--color-main);
+}

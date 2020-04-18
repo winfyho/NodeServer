@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章管理</title>
+    <link rel="stylesheet" href="./static/css/common/base.css">
+    <link rel="stylesheet" href="./static/css/common/style.css">
+    <link rel="stylesheet" href="./components/content/articles/articles.css">
+    <link rel="stylesheet" href="./components/content/articleEditor/ArticleEditor.css">
+    <link rel="stylesheet" href="./components/common/navigator/Navigator.css">
+    <script src="./static/js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <navigator-head :route="curRoute"></navigator-head>
+
+        <div class="view">
+            <articles></articles>
+
+            <article-editor></article-editor>
+
+        </div>
+
+    </div>
+</body>
+<script type="module">
+    // import Vue from "./static/js/vue.js"
+    // import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js';
+    import Sign from "./components/common/sign/sign.js";
+    import NavigatorHead from "./components/common/navigator/Navigator.js";
+    import Articles from "./components/content/articles/Articles.js";
+    import ArticleEditor from "./components/content/articleEditor/ArticleEditor.js";
+    const vm = new Vue({
+        el: '#app',
+        components: {
+            NavigatorHead,
+            Articles,
+            ArticleEditor
+        },
+        data: {
+            curRoute: 'article'
+        }
+    })
+
+</script>
+
+</html>

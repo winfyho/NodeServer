@@ -1,16 +1,16 @@
 .sign-wraper{
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .7)
+    /* background: rgba(0, 0, 0, .7);
+    background: var(--color-main); */
 }
 .sign{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-60%) ;
+    right: 0px;
+    top: 80px;
     background: #fff;
     width: 350px;
     height: 350px;
@@ -36,4 +36,14 @@
     padding: 15px 0;
     box-sizing: border-box;
     border-radius: 16px;
+}
+.sign .btn-submit{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.sign .modif input{
+    flex: 0 0  auto;
+    width: 120px;
+    border-radius: 0px;
+    margin-left: 20px;
 }
